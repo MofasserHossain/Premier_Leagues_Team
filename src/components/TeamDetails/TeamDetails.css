@@ -1,13 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-a:hover {
-  text-decoration: none !important;
-}
-
-img {
-  width: 100%;
+.team-details {
+  margin-top: 60px;
 }
 
 .banner {
@@ -18,7 +10,7 @@ img {
   content: '';
   display: block;
   position: absolute;
-  background-color: #f0f8ff23;
+  background-color: #f0f8ff57;
   width: 100%;
   height: 100%;
 }
