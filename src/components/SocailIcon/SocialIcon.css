@@ -1,0 +1,15 @@
+.team__socialIcon span {
+  width: 40px !important;
+  height: 40px !important;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #3d195b;
+  margin: 0 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.team__socialIcon span a {
+  color: #fff;
+}

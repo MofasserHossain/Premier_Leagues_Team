@@ -5,17 +5,9 @@ import Team from './components/Team/Team';
 import { useState, useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { TeamDetails } from './components/TeamDetails/TeamDetails';
-import banner from './banner.jpg';
-const background = {
-  backgroundImage: `url(${banner})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  height: '40vh',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-};
+import NotFound from './components/NotFound/NotFound';
+import Banner from './components/Banner/Banner';
+
 function App() {
   const [teams, setTeams] = useState([]);
   useEffect(() => {
@@ -25,16 +17,15 @@ function App() {
       .then((res) => res.json())
       .then((data) => setTeams(data.teams));
   }, []);
-  console.log(teams);
+
   const teamsList = teams.slice(0, 18);
+
   return (
     <Router>
       <Header />
       <Switch>
         <Route exact path="/">
-          <div style={background} className="banner">
-            <h3>Premier Leagues Team</h3>
-          </div>
+          <Banner></Banner>
           <Container>
             <Row>
               {teamsList.map((team) => (
@@ -44,9 +35,7 @@ function App() {
           </Container>
         </Route>
         <Route path="/all-teams">
-          <div style={background} className="banner">
-            <h3>Premier Leagues Team</h3>
-          </div>
+          <Banner></Banner>
           <Container>
             <Row>
               {teamsList.map((team) => (
@@ -59,7 +48,9 @@ function App() {
           <TeamDetails></TeamDetails>
         </Route>
         <Route path="/log-in"></Route>
-        <Route path="*"></Route>
+        <Route path="*">
+          <NotFound></NotFound>
+        </Route>
       </Switch>
     </Router>
   );

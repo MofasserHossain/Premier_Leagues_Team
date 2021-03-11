@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# This is a Premier Leagues Team Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here is the live [link](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

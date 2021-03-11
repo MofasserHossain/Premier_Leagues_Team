@@ -3,6 +3,39 @@
   display: block;
   margin: 0 auto;
 }
-.team a {
-  color: #fff !important;
+.card {
+  border: none !important;
+}
+.team__card {
+  box-shadow: 0 0 10px #c9d7e0 !important;
+  transition: box-shadow 650ms;
+}
+.team__card:hover {
+  box-shadow: none !important;
+}
+
+.card-title {
+  font-size: 25px !important;
+}
+
+.card-text {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+.button a {
+  color: #007bff;
+}
+.button a:hover {
+  color: #e7eef3;
+}
+.button {
+  border: 1px solid #007bff !;
+  background-color: transparent !important;
+}
+.button:hover {
+  background-color: #007bff !important;
+  color: #e7eef3 !important;
+}
+.button:hover a {
+  color: #e7eef3 !important;
 }

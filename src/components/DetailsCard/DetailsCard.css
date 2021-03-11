@@ -1,0 +1,22 @@
+.teamDetails__card {
+  background-color: #3d195b;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.teamDetails__info h1 {
+  font-size: 45px;
+}
+
+.teamDetails__info p {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0;
+}
+.teamDetails__info p span {
+  margin-right: 10px;
+}
+.team__desc p {
+  margin-top: 10px;
+}

@@ -7,21 +7,30 @@ import './Header.css';
 const Header = () => {
   return (
     <>
-      <Navbar fixed="top" className="shadow" bg="white " variant="dark">
+      <Navbar
+        collapseOnSelect
+        expand="sm"
+        fixed="top"
+        className="shadow"
+        bg="white "
+      >
         <Container>
           <Navbar.Brand>
             <Link to="/">
               <img src={logo} alt="Logo" />
             </Link>
           </Navbar.Brand>
-          <Nav className="ml-auto">
-            <Nav.Link>
-              <Link to="/all-teams">All Teams</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/log-in">Log In</Link>
-            </Nav.Link>
-          </Nav>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link>
+                <Link to="/all-teams">All Teams</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/log-in">Log In</Link>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

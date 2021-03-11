@@ -1,0 +1,30 @@
+.banner {
+  position: relative;
+  margin-top: 50px;
+}
+.banner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #f0f8ff57;
+  width: 100%;
+  height: 100%;
+}
+.banner h3 {
+  font-size: 40px;
+  color: #e5f1fa !important;
+}
+
+@media (max-width: 450px) {
+  .banner h3 {
+    font-size: 30px;
+    color: #e5f1fa !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .banner h3 {
+    font-size: 23px;
+    color: #e5f1fa !important;
+  }
+}
