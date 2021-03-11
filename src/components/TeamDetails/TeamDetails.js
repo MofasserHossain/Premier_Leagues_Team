@@ -3,7 +3,8 @@ import { useParams } from 'react-router';
 import './TeamDetails.css';
 import { Container } from 'react-bootstrap';
 import DetailsCard from '../DetailsCard/DetailsCard';
-import SocialIcon from '../SocailIcon/SocialIcon';
+import SocialIcon from '../SocialIcon/SocialIcon';
+import NotFound from '../NotFound/NotFound';
 
 export const TeamDetails = () => {
   const { teamId } = useParams();
@@ -19,13 +20,23 @@ export const TeamDetails = () => {
 
   return (
     <div className="team-details">
-      <div className="banner2">
-        <img src={strTeamBanner} alt="banner" />
-      </div>
-      <Container>
-        <DetailsCard teamDetails={teamDetails}></DetailsCard>
-        <SocialIcon></SocialIcon>
-      </Container>
+      {teamDetails ? (
+        <>
+          <div className="banner2">
+            {strTeamBanner ? (
+              <img src={strTeamBanner} alt="banner" />
+            ) : (
+              <h5 className="text-center">Banner Not Found</h5>
+            )}
+          </div>
+          <Container>
+            <DetailsCard teamDetails={teamDetails}></DetailsCard>
+            <SocialIcon></SocialIcon>
+          </Container>
+        </>
+      ) : (
+        <NotFound></NotFound>
+      )}
     </div>
   );
 };
