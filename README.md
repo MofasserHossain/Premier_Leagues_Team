@@ -1,10 +1,11 @@
 # This is a Premier Leagues Team Project
 
-Here is the live [link](https://github.com/facebook/create-react-app).
+Here is the live [link](https://premier-leagues-team.netlify.app/).
 
-## Available Scripts
+## How to setup in local desktop
 
-In the project directory, you can run:
+Download or clone this project. Open this project in terminal and Run `npm install`
+This will automatically install all the dependency node module file.
 
 ### `yarn start`
 

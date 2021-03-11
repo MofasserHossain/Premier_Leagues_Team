@@ -2,11 +2,22 @@
   margin-top: 60px;
 }
 
-team-details .banner2 {
+.team-details .banner2 {
   margin-top: 50px;
 }
 
-team-details .banner2 h3 {
-  font-size: 40px;
-  color: #e5f1fa !important;
+@media (max-width: 900px) {
+  .team-details .banner2 img {
+    height: 180px !important;
+  }
+}
+@media (max-width: 700px) {
+  .team-details .banner2 img {
+    height: 140px !important;
+  }
+}
+@media (max-width: 500px) {
+  .team-details .banner2 img {
+    height: 120px !important;
+  }
 }

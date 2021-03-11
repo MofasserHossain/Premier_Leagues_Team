@@ -19,4 +19,5 @@
 }
 .team__desc p {
   margin-top: 10px;
+  text-align: justify;
 }

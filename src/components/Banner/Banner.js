@@ -14,7 +14,7 @@ const background = {
 const Banner = () => {
   return (
     <div style={background} className="banner">
-      <h3>Premier Leagues Team</h3>
+      <h3>Premier League Teams</h3>
     </div>
   );
 };
