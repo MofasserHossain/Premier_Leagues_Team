@@ -1,6 +1,6 @@
 # Premier Leagues Team Project
 
-Here is the live [link](https://premier-leagues-team.netlify.app/).
+Here is the live [link : premier-leagues-team.netlify.app](https://premier-leagues-team.netlify.app/).
 
 ## How to setup in local desktop
 
