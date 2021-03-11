@@ -9,10 +9,12 @@
   background-color: #f0f8ff57;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .banner h3 {
   font-size: 40px;
   color: #e5f1fa !important;
+  z-index: 1000;
 }
 
 @media (max-width: 450px) {
