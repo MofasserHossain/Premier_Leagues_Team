@@ -4,6 +4,7 @@ import './TeamDetails.css';
 import { Container } from 'react-bootstrap';
 import DetailsCard from '../DetailsCard/DetailsCard';
 import SocialIcon from '../SocialIcon/SocialIcon';
+import banner from '../../banner.jpg';
 
 export const TeamDetails = () => {
   const { teamId } = useParams();
@@ -15,9 +16,9 @@ export const TeamDetails = () => {
       .then((res) => res.json())
       .then((data) => setTeamDetails(data.teams[0]));
   }, [teamId]);
-  const { strTeamBanner, strTeamBadge } = teamDetails;
+  const { strTeamBadge } = teamDetails;
   const background = {
-    backgroundImage: `url(${strTeamBanner})`,
+    backgroundImage: `url(${banner})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
