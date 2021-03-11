@@ -8,6 +8,7 @@ import './Team.css';
 const Team = (props) => {
   const teamData = props.team;
   const { strTeam, strSport, strTeamBadge, idTeam } = teamData;
+
   return (
     <Col md={6} lg={4} className="my-4 team">
       <Card className="team__card">

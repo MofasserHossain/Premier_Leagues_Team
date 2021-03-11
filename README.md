@@ -13,4 +13,8 @@ This will automatically install all the dependency node module file in this reac
 - Here are 20 Premier League Teams' data.
 - When you click explore button, it will show you more information about the team which you clicked. 
 - On the details page, it shows you the team banner image, team information, description, and some social icon.
+<<<<<<< HEAD
 - And if the team is a male team it will show you the male team image in details card. otherwise, it will show you a female team image.
+=======
+- And if the team is a male team it will show you the male team image in details card. otherwise, it will show you a female team image.
+>>>>>>> a05a9f9e1eced27cb204f5725d2e30a99d77ad2d

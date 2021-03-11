@@ -17,7 +17,6 @@ function App() {
       .then((res) => res.json())
       .then((data) => setTeams(data.teams));
   }, []);
-
   const teamsList = teams.slice(0, 18);
 
   return (

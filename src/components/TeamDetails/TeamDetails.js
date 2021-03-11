@@ -9,13 +9,13 @@ import NotFound from '../NotFound/NotFound';
 export const TeamDetails = () => {
   const { teamId } = useParams();
   const [teamDetails, setTeamDetails] = useState([]);
+
   useEffect(() => {
     const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${teamId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setTeamDetails(data.teams[0]));
   }, [teamId]);
-
   const { strTeamBanner } = teamDetails;
 
   return (
