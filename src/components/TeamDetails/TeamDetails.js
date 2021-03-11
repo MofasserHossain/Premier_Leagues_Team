@@ -7,7 +7,7 @@ import SocialIcon from '../SocialIcon/SocialIcon';
 
 export const TeamDetails = () => {
   const { teamId } = useParams();
-  const [teamDetails, setTeamDetails] = useState([]);
+  const [teamDetails, setTeamDetails] = useState({});
 
   useEffect(() => {
     const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${teamId}`;
