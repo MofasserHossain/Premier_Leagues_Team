@@ -15,12 +15,21 @@ export const TeamDetails = () => {
       .then((res) => res.json())
       .then((data) => setTeamDetails(data.teams[0]));
   }, [teamId]);
-  const { strTeamBanner } = teamDetails;
-
+  const { strTeamBanner, strTeamBadge } = teamDetails;
+  const background = {
+    backgroundImage: `url(${strTeamBanner})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    height: '50vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
   return (
     <div className="team-details">
-      <div className="banner2">
-        <img src={strTeamBanner} alt="banner" />
+      <div style={background} className="banner2">
+        <img className="team__badge" src={strTeamBadge} alt="Badge" />
       </div>
       <Container>
         <DetailsCard teamDetails={teamDetails}></DetailsCard>
