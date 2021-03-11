@@ -17,17 +17,11 @@ export const TeamDetails = () => {
 
   const { strTeamBanner } = teamDetails;
 
-  const background = {
-    backgroundImage: `url(${strTeamBanner})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    padding: '130px 0',
-  };
-
   return (
     <div className="team-details">
-      <div style={background} className="banner2"></div>
+      <div className="banner2">
+        <img src={strTeamBanner} alt="banner" />
+      </div>
       <Container>
         <DetailsCard teamDetails={teamDetails}></DetailsCard>
         <SocialIcon></SocialIcon>
